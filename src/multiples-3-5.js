@@ -20,7 +20,10 @@ function solution(number){
     sum += val;
   });
 
-  if(!number || (typeof number) === "string"){
+  if(number === 0){
+    return 0;
+  }
+  else if(!number || (typeof number) === "string"){
     return -1;
   }
   return sum;
